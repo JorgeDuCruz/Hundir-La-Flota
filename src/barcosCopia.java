@@ -12,6 +12,10 @@ public class barcosCopia {
         recorrerTablero(tablero);
     }
 
+    /**
+     * Funcion que revisa un tablero
+     * @param aux_tablero tablero a revisar
+     */
     private static void recorrerTablero(int[][] aux_tablero) {
         for (int i=0;i<aux_tablero.length;i++){
             for (int j=0;j<aux_tablero[i].length;j++){
@@ -20,6 +24,12 @@ public class barcosCopia {
         }
     }
 
+    /**
+     * Funcion que revisa si en la posicion hay o no un barco y que tipo de barco es
+     * @param i fila para saber la posicion
+     * @param j columna para saber la posicion
+     * @param auxTablero tablero
+     */
     private static void mostrarNave(int i, int j, int[][] auxTablero) {
         if (auxTablero[i][j]!=0){
             switch (auxTablero[i][j]){
