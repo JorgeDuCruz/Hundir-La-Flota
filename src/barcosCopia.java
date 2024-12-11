@@ -1,4 +1,13 @@
+/**
+ * Juego de Hundir la Flota
+ * @version 1.0
+ * @author Jorge Duran Cruz
+ */
 public class barcosCopia {
+    /**
+     * Funcion principal
+     * @param args parametros del juego
+     */
     public static void main(String[]args){
         int[][] tablero;
         tablero=new int[][]{
@@ -13,7 +22,7 @@ public class barcosCopia {
     }
 
     /**
-     * Funcion que revisa un tablero
+     * Recorre un tablero
      * @param aux_tablero tablero a revisar
      */
     private static void recorrerTablero(int[][] aux_tablero) {
@@ -27,7 +36,8 @@ public class barcosCopia {
     }
 
     /**
-     * Funcion que indica que tipo de barco hay en una coordenada
+     * Muestra por pantalla el tipo de barco que hay en una coordenada
+     * y tambien muestra la ordenada y la coordenada
      * @param valorCoordenada valor que se va a analizar
      * @param y coordenada y
      * @param x coordenada x
@@ -53,8 +63,8 @@ public class barcosCopia {
     }
 
     /**
-     * Funcion que revisa si en la coordenada hay un barco o no
-     * @param valor_coordenada valor que se va a analizar
+     * Revisa si en la coordenada hay un barco o no
+     * @param valor_coordenada valor de la coordenada que se va a analizar
      * @return true si es un barco, false si no es un barco
      */
     static boolean esNave(int valor_coordenada){
